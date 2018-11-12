@@ -5,7 +5,7 @@ import (
 	"github.com/gogap/config"
 
 	"github.com/gogap/bearychat"
-	"github.com/gogap/logrus_mate"
+	"github.com/nnkken/logrus_mate/v2"
 	"github.com/sirupsen/logrus"
 )
 

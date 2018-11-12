@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gogap/config"
-	"github.com/gogap/logrus_mate"
+	"github.com/nnkken/logrus_mate/v2"
 	"github.com/rifflock/lfshook"
 	"github.com/sirupsen/logrus"
 )

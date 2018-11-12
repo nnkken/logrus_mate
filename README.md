@@ -15,7 +15,7 @@ package main
 
 import (
     "github.com/sirupsen/logrus"
-    "github.com/gogap/logrus_mate"
+    "github.com/nnkken/logrus_mate/v2"
 )
 
 func main() {
@@ -39,7 +39,7 @@ Create new logger from mate:
 package main
 
 import (
-    "github.com/gogap/logrus_mate"
+    "github.com/nnkken/logrus_mate/v2"
 )
 
 func main() {
@@ -63,7 +63,7 @@ package main
 
 import (
     "github.com/sirupsen/logrus"
-    "github.com/gogap/logrus_mate"
+    "github.com/nnkken/logrus_mate/v2"
 )
 
 func main() {
@@ -91,7 +91,7 @@ package main
 
 import (
     "github.com/sirupsen/logrus"
-    "github.com/gogap/logrus_mate"
+    "github.com/nnkken/logrus_mate/v2"
 )
 
 func main() {
@@ -124,7 +124,7 @@ package main
 
 import (
     "github.com/sirupsen/logrus"
-    "github.com/gogap/logrus_mate"
+    "github.com/nnkken/logrus_mate/v2"
 )
 
 func main() {
@@ -166,8 +166,8 @@ you also could set your own config provider
 When we need use above hooks, we need import these package as follow:
 
 ```go
-import _ "github.com/gogap/logrus_mate/hooks/syslog"
-import _ "github.com/gogap/logrus_mate/hooks/mail"
+import _ "github.com/nnkken/logrus_mate/v2/hooks/syslog"
+import _ "github.com/nnkken/logrus_mate/v2/hooks/mail"
 ```
 
 If you want write your own hook, you just need todo as follow:
@@ -176,7 +176,7 @@ If you want write your own hook, you just need todo as follow:
 package myhook
 
 import (
-    "github.com/gogap/logrus_mate"
+    "github.com/nnkken/logrus_mate/v2"
 )
 
 type MyHookConfig struct {
@@ -219,7 +219,7 @@ func NewMyHook(config logrus_mate.Configuration) (hook logrus.Hook, err error) {
 When we need use 3rd formatter, we need import these package as follow:
 
 ```go
-import _ "github.com/gogap/logrus_mate/formatters/xxx"
+import _ "github.com/nnkken/logrus_mate/v2/formatters/xxx"
 ```
 
 If you want write your own formatter, you just need todo as follow:
@@ -228,7 +228,7 @@ If you want write your own formatter, you just need todo as follow:
 package myformatter
 
 import (
-    "github.com/gogap/logrus_mate"
+    "github.com/nnkken/logrus_mate/v2"
 )
 
 type MyFormatterConfig struct {
@@ -269,7 +269,7 @@ func NewMyFormatter(config logrus_mate.Configuration) (formatter logrus.Formatte
 When we need use 3rd writer, we need import these package as follow:
 
 ```go
-import _ "github.com/gogap/logrus_mate/writers/redisio"
+import _ "github.com/nnkken/logrus_mate/v2/writers/redisio"
 ```
 
 If you want write your own writer, you just need todo as follow:
@@ -280,7 +280,7 @@ package mywriter
 import (
     "io"
 
-    "github.com/gogap/logrus_mate"
+    "github.com/nnkken/logrus_mate/v2"
 )
 
 type MyWriterConfig struct {
@@ -344,7 +344,7 @@ package main
 
 import (
     "github.com/gogap/config"
-    "github.com/gogap/logrus_mate"
+    "github.com/nnkken/logrus_mate/v2"
     "github.com/sirupsen/logrus"
 )
 
